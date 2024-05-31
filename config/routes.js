@@ -1,14 +1,14 @@
-/**
- * Route Mappings
- * (sails.config.routes)
- *
- * Your routes tell Sails what to do each time it receives a request.
- *
- * For more information on configuring custom routes, check out:
- * https://sailsjs.com/anatomy/config/routes-js
- */
-
-module.exports.routes = {
-
-
+const routesGroups = require("./routes/index");
+let routes = {};
+for (const index in routesGroups) {
+  routes = { ...routes, ...routesGroups[index] };
+}
+const appRoutes = {
+  ...routes,
 };
+
+if (process.env.NODE_ENV !== "production") {
+  console.log("config/routes.js", "appRoutes", appRoutes);
+}
+
+module.exports.routes = appRoutes;

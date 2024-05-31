@@ -24,3 +24,5 @@ There are 3 types of users:
 8. Story 8: Buyer must login to continue order process
 9. Story 9: Buyer can adjust their shipping addresses, phone numbers
 10. Story 10: Buyer can manage their orders
+
+## Development

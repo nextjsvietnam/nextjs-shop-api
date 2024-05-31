@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@models/*": ["api/models/*"],
+      "@controllers/*": ["api/controllers/*"],
+      "@services/*": ["api/services/*"],
+      "@dtos/*": ["api/dtos/*"]
+    }
+  },
+  "include": ["api/**/*"],
+  "exclude": ["node_modules"]
+}

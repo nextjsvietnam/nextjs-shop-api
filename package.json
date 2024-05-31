@@ -7,6 +7,7 @@
   "dependencies": {
     "@sailshq/lodash": "^3.10.6",
     "joi": "^17.13.1",
+    "module-alias": "^2.2.3",
     "sails": "^1.5.11",
     "sails-hook-orm": "^4.0.3",
     "sails-hook-sockets": "^3.0.0"
@@ -31,5 +32,11 @@
   "license": "",
   "engines": {
     "node": "^21.7"
-  }
+  },
+  "_moduleAliases": {
+    "@models": "api/models",
+    "@controllers": "api/controllers",
+    "@services": "api/services",
+    "@dtos": "api/dtos"
+  }  
 }

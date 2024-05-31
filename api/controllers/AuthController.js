@@ -4,8 +4,8 @@
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
-const AuthService = require("../services/auth.service");
-const { LoginDto } = require("../dtos/auth.dto");
+const AuthService = require("@services/auth.service");
+const LoginDto = require("@dtos/auth/login.dto");
 module.exports = {
   login: async (req, res) => {
     try {
